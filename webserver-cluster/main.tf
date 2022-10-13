@@ -135,9 +135,9 @@ data "terraform_remote_state" "db" {
   backend = "s3"
 
   config = {
-    bucket = "terraform-di-christian"
+    bucket = "user25-terraform"
     key    = var.remote_db_state_key
-    region = "us-west-1"
+    region = "us-east-1"
   }
 }
 
